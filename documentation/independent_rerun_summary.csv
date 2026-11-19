@@ -1,0 +1,7 @@
+workload,protocol,validation_trials,completed_requests,errors,median_trial_p99_ms,median_throughput_rps
+large_steady,grpc_protobuf,6,222,0,1.9547938599589547,153.2338147335442
+large_steady,rest_json,6,222,0,4.080904659997486,152.91960363832425
+medium_bursty,grpc_protobuf,6,630,0,2.740985205730339,433.5256521610344
+medium_bursty,rest_json,6,630,0,10.858340800084523,430.94268731215385
+small_steady,grpc_protobuf,6,270,0,1.5437887510870516,183.27163310451454
+small_steady,rest_json,6,270,0,1.9334570622118017,183.19536921716985

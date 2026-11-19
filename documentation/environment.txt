@@ -1,0 +1,14 @@
+AHISF evaluation environment (current execution)
+Date: 2026-11-15
+Platform: Linux-6.18.57-x86_64-with-glibc2.41
+Kernel: 6.18.57
+Python: 3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]
+CPU: AMD EPYC 9V74 80-Core Processor
+Logical CPUs visible: 5
+Cgroup CPU quota: 400000 100000
+Cgroup memory limit: 4294967296
+Dependencies: grpcio 1.80.0, protobuf 6.33.6, requests 2.32.5, uvicorn 0.48.0, starlette 0.50.0, psutil 7.2.2 (from benchmark metadata)
+Primary process-separated dataset: 90 trials; 2 adapters x 3 workloads x 15 repetitions; 5 calibration + 10 held-out; 3.0 s timed duration; 67,500 completed requests overall; 45,000 held-out requests; zero errors.
+Independent short rerun: 60 trials; 2 adapters x 3 workloads x 10 repetitions; 4 calibration + 6 held-out; 0.25 s timed duration; 2,244 held-out completed requests; zero errors.
+Switch test: 40 alternating route transitions, 20 to each adapter; both server processes remained warm; measured close/recreate client session/channel plus first valid request.
+Note: The 3.0 s primary dataset was already present in the user's reproducibility bundle and was reanalysed here; the 0.25 s rerun and 40-transition switch-cost test were executed in this run. The incomplete 15-repetition/0.5 s attempt was discarded and is not used.

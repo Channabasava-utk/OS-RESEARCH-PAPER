@@ -1,0 +1,5 @@
+switch_index,from,to,first_request_after_switch_ms,steady_median_ms,incremental_switch_overhead_ms,response_validated
+1,rest_json,grpc_protobuf,4.185609,3.0766365,1.1089725000000001,True
+2,grpc_protobuf,rest_json,4.21804,1.8832365,2.3348035000000005,True
+3,rest_json,grpc_protobuf,3.718163,3.0766365,0.6415264999999999,True
+4,grpc_protobuf,rest_json,4.888437,1.8832365,3.0052005,True

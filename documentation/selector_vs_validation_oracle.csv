@@ -1,0 +1,4 @@
+workload,ahisf_calibration_selected,validation_p99_best,ahisf_selected_validation_p99_median_ms,best_validation_p99_median_ms,relative_p99_penalty_pct,selection_matches_validation_best
+large_steady,rest_json,grpc_protobuf,3.4619164665195936,1.907342968315786,81.50466507743599,False
+medium_bursty,grpc_protobuf,grpc_protobuf,2.268166887481592,2.268166887481592,0.0,True
+small_steady,rest_json,grpc_protobuf,3.5635964094535693,3.519022257594317,1.2666629704616892,False

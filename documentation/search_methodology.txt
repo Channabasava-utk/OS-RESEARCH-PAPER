@@ -1,0 +1,12 @@
+Independent literature-search replication
+Search date: 15 November 2026
+Primary publication window: 1 January 2023–15 November 2026. Older standards and foundational mechanisms retained as background only.
+Search method: exact Boolean/phrase query families were executed through the available indexed retrieval interface, with source-targeted searches for OpenAlex-indexed records, IEEE Xplore, ACM proceedings, USENIX, arXiv, Springer/Crossref, ScienceDirect/DBLP, and publisher pages. Exact-title and DOI verification searches were used for key closest-work records.
+Query families:
+1. (microservice* OR "cloud-native service*") AND (communication OR RPC OR IPC OR messaging OR broker OR "shared memory" OR "zero-copy") AND (performance OR latency OR throughput OR scalability OR benchmark)
+2. (microservice* OR "microservice systems") AND ("runtime adaptation" OR "self-adaptation" OR QoS OR SLO OR controller) AND (communication OR RPC OR protocol OR routing OR selection)
+3. (REST OR gRPC OR GraphQL OR HTTP/2) AND (microservice* OR inter-service) AND (latency OR throughput OR CPU OR benchmark)
+4. ("service mesh" OR sidecar OR eBPF OR XDP OR DPDK OR RDMA) AND (microservice* OR IPC) AND (performance OR latency OR throughput)
+5. ("Unix domain socket" OR pipe OR "shared memory" OR io_uring OR futex OR eventfd) AND (IPC OR microservice*) AND performance
+6. Exact-title searches for the 2025 comparative review, 2026 self-adaptation review, RPCX, DistMeasure, L7FP, and 2026 REST/gRPC studies.
+Inclusion/exclusion criteria were fixed before screening and are listed in screening_log.csv. The search log contains exact executed queries/actions and all surfaced record IDs. Database-native hit counts and full exports were not available; no PRISMA totals are claimed. The direct Crossref and OpenAlex API endpoints returned inaccessible errors in this interface. This is a reproducible targeted evidence update, not a complete systematic review with independently audited database exports.

@@ -1,0 +1,17 @@
+syntax = "proto3";
+package ahisf;
+
+message EchoRequest {
+  uint64 request_id = 1;
+  bytes payload = 2;
+}
+
+message EchoResponse {
+  uint64 request_id = 1;
+  uint64 payload_size = 2;
+  bytes sha256 = 3;
+}
+
+service Echo {
+  rpc Echo(EchoRequest) returns (EchoResponse);
+}

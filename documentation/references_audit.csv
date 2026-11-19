@@ -1,0 +1,12 @@
+reference,doi_or_identifier,record_url_checked,verification_source,status,action
+[16] Çiftçi & Çiloğlugil (2025),10.1007/978-3-031-96962-1_7,https://doi.org/10.1007/978-3-031-96962-1_7,Crossmark; Springer chapter record; DBLP,Verified metadata,Add/retain; closest direct review
+Jawabreh & Taweel (2026),10.1016/j.infsof.2026.108135,https://doi.org/10.1016/j.infsof.2026.108135,ScienceDirect; DBLP,Verified title/authors/DOI/year; volume 195/article 108135,Add; self-adaptation review
+Brandner et al. (2026),arXiv:2605.31084,https://arxiv.org/abs/2605.31084,arXiv abstract and author list,Verified preprint metadata; not peer-reviewed,Add with preprint label
+Noertjahyana et al. (2026),10.51584/IJRIAS.2026.11060258,https://doi.org/10.51584/IJRIAS.2026.11060258,Publisher record and issue listing,"Verified authors, date, journal, volume, pages, DOI; quality/indexing not assessed",Add; runtime/protocol confounded comparison
+IEEE gRPC/REST conference paper (2026),10.1109/ICISCoIS62701.2026.11448051,https://doi.org/10.1109/ICISCoIS62701.2026.11448051,IEEE Xplore,"Verified title, conference, date, DOI; author metadata and reference list not visible in result",Mention cautiously; do not add full reference without author list/full text
+HybridMesh (NSDI 2026),USENIX NSDI 26 proceedings,https://www.usenix.org/conference/nsdi26/presentation/you,USENIX proceedings page,Verified authors/title/venue/pages; DOI not provided in record,Add as adjacent data-path study
+Towards Performance Robustness for Microservices (NSDI 2026),USENIX NSDI 26 proceedings,https://www.usenix.org/conference/nsdi26/presentation/saxena,USENIX proceedings page,Verified authors/title/venue/pages; DOI not provided in record,Add as adjacent adaptive controller work
+Zhang et al. RPCX (2023),10.1038/s41598-023-39355-4,https://www.nature.com/articles/s41598-023-39355-4,Nature publisher; PubMed,Verified metadata and abstract,Retain; primary RPC comparison
+Niswar et al. (2024),10.24425/ijet.2024.149562,https://doi.org/10.24425/ijet.2024.149562,Publisher/PAN record,Verified metadata and abstract,Retain; REST/GraphQL/gRPC comparison
+DistMeasure,10.1145/3708476,https://doi.org/10.1145/3708476,ACM/author/institution indexed record,DOI/record found; final venue/issue metadata should be checked on ACM DOI page before submission,Retain cautiously; check ACM record
+RPCM (2024),10.1007/s00607-023-01232-3,https://doi.org/10.1007/s00607-023-01232-3,Springer/DBLP record,Verified metadata in previous audit,Retain; closest locality-aware selector

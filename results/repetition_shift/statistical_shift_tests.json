@@ -1,0 +1,80 @@
+{
+  "kruskal_wallis_p99_by_repetition": {
+    "fixed_rest": {
+      "h_statistic": 4.218059405940551,
+      "p_value": 0.8964829757358527,
+      "significant_alpha_0_05": false
+    },
+    "fixed_grpc": {
+      "h_statistic": 71.97861386138607,
+      "p_value": 6.224285315527279e-12,
+      "significant_alpha_0_05": true
+    },
+    "adaptive_ahisf": {
+      "h_statistic": 36.68031683168323,
+      "p_value": 3.000913130844918e-05,
+      "significant_alpha_0_05": true
+    }
+  },
+  "spearman_monotonic_drift_with_repetition": {
+    "fixed_rest": {
+      "p99_latency": {
+        "spearman_rho": -0.0349770648679875,
+        "p_value": 0.7297343660372406
+      },
+      "cpu_utilization": {
+        "spearman_rho": 0.7042451095316516,
+        "p_value": 2.977979946167965e-16
+      },
+      "peak_rss_memory": {
+        "spearman_rho": 0.9735111245607382,
+        "p_value": 1.2986463345693653e-64
+      }
+    },
+    "fixed_grpc": {
+      "p99_latency": {
+        "spearman_rho": -0.6861535242551065,
+        "p_value": 3.3200743794774766e-15
+      },
+      "cpu_utilization": {
+        "spearman_rho": 0.7137733444439656,
+        "p_value": 7.763918624629301e-17
+      },
+      "peak_rss_memory": {
+        "spearman_rho": 0.96549049769048,
+        "p_value": 4.562766865730593e-59
+      }
+    },
+    "adaptive_ahisf": {
+      "p99_latency": {
+        "spearman_rho": -0.5025842389824272,
+        "p_value": 9.916059002959507e-08
+      },
+      "cpu_utilization": {
+        "spearman_rho": 0.6601016414568813,
+        "p_value": 7.995684640528541e-14
+      },
+      "peak_rss_memory": {
+        "spearman_rho": 0.9580126200069311,
+        "p_value": 5.6916552972287535e-55
+      }
+    }
+  },
+  "kruskal_wallis_order_effect": {
+    "fixed_rest": {
+      "h_statistic": 1.177653465346566,
+      "p_value": 0.5549780405065862,
+      "significant_alpha_0_05": false
+    },
+    "fixed_grpc": {
+      "h_statistic": 15.49408316831682,
+      "p_value": 0.00043201874296926185,
+      "significant_alpha_0_05": true
+    },
+    "adaptive_ahisf": {
+      "h_statistic": 2.5522871287128623,
+      "p_value": 0.27911160356788733,
+      "significant_alpha_0_05": false
+    }
+  }
+}

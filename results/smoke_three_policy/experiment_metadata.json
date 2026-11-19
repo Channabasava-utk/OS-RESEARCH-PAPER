@@ -1,0 +1,63 @@
+{
+  "design": "matched repeated three-policy changing-workload experiment",
+  "policies": [
+    "fixed_rest",
+    "fixed_grpc",
+    "adaptive_ahisf"
+  ],
+  "repetitions": 1,
+  "window_duration_s": 0.5,
+  "schedule": [
+    "small_steady",
+    "small_steady",
+    "medium_bursty",
+    "medium_bursty",
+    "large_steady",
+    "large_steady",
+    "medium_bursty",
+    "medium_bursty",
+    "small_steady",
+    "small_steady"
+  ],
+  "workload_definitions": {
+    "small_steady": {
+      "name": "small_steady",
+      "payload_bytes": 64,
+      "offered_rps": 180,
+      "duration_s": 3.0,
+      "concurrency": 32,
+      "description": "64-byte steady; 180 offered req/s"
+    },
+    "medium_bursty": {
+      "name": "medium_bursty",
+      "payload_bytes": 4096,
+      "offered_rps": 420,
+      "duration_s": 3.0,
+      "concurrency": 48,
+      "description": "4-KiB periodic burst; 420 offered req/s"
+    },
+    "large_steady": {
+      "name": "large_steady",
+      "payload_bytes": 65536,
+      "offered_rps": 150,
+      "duration_s": 3.0,
+      "concurrency": 48,
+      "description": "64-KiB steady; 150 offered req/s"
+    }
+  },
+  "calibration_file": "/home/vboxuser/Downloads/attachments (1)/AHISF_CORRECTED/calibration/primary_raw_trials.csv",
+  "calibration_rule": "median of primary dataset repetitions 1-5 for each adapter/workload; frozen before this run",
+  "adaptive_policy": "AHISF controller with 5% hysteresis, two consecutive windows, one-window minimum residence; phase label known to experiment controller",
+  "adaptive_limitation": "not a live telemetry-driven router; no online counterfactual learning; current phase label is supplied by deterministic schedule",
+  "paired_seed_rule": "same repetition/window seed across all policies",
+  "randomization": "policy order independently shuffled within each repetition using seed+repetition",
+  "server_lifecycle": "both REST and gRPC server processes started before each policy schedule and kept warm through its phases",
+  "switching_cost": "not included in timed window latency; report separately using measure_switch.py",
+  "host": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+  "python": "3.11.18 (main, Oct 26 2026, 14:05:07) [Clang 23.1.3 ]",
+  "seed": 20261116,
+  "windows": 30,
+  "requests_completed": 4050,
+  "errors": 0,
+  "sha256_calibration_csv": "7ef96fee6573e2645bd942c1357da76841bee840a3a3abb6496c6e62f5cec921"
+}

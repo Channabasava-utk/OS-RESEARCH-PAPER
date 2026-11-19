@@ -1,0 +1,13 @@
+record,identifier,decision,verification_and_reason,scope_boundary
+Çiftçi & Çiloğlugil 2025 review,10.1007/978-3-031-96962-1_7,Include—closest review,Crossmark/Springer/DBLP metadata match; directly reviews comparative microservice communication mechanisms,Review literature; does not implement AHISF
+Jawabreh & Taweel 2026 self-adaptation review,10.1016/j.infsof.2026.108135,Include—closest adaptation review,ScienceDirect and DBLP metadata match; 35 primary studies on microservice self-adaptation,Broad adaptation taxonomy; not IPC protocol selector evaluation
+Zhang et al. RPCX 2023,10.1038/s41598-023-39355-4,Include—primary comparative communication study,Nature/PubMed metadata and abstract verified,"Two cloud servers, 1 vCPU/2GB/1Mbps; RPCX vs REST/OpenFeign/gRPC; source-specific setup"
+Niswar et al. 2024,10.24425/ijet.2024.149562,Include—primary protocol comparison,Publisher record and abstract verified,Three containerized services; flat/nested data; 100–500 requests
+DistMeasure 2024/2025 record,10.1145/3708476,Include—runtime IPC characterization,ACM/ResearchGate record; metadata requires venue/version check in final bibliography,"Characterization/quality assessment, not selection policy"
+RPCM 2024,10.1007/s00607-023-01232-3,Include—closest locality-aware communication,Publisher/DBLP metadata in earlier evidence ledger,Local/remote domain-aware communication; narrows novelty claim
+L7FP 2026,arXiv:2605.31084,Include—recent OS/service-mesh preprint,arXiv identifier and author list verified,"Preprint; eBPF L7 policy path, not an AHISF selector"
+Noertjahyana et al. 2026,10.51584/IJRIAS.2026.11060258,Include—recent empirical comparison,"Publisher record provides authors, date, journal, pages, DOI and abstract",REST/gRPC intertwined with Java/Python concurrency; not protocol-only comparison
+IEEE gRPC/REST 2026,10.1109/ICISCoIS62701.2026.11448051,Include—recent empirical comparison,"IEEE Xplore record gives title, conference, DOI and abstract",No reference list in record; full text needed for detailed extraction
+HybridMesh NSDI 2026,USENIX NSDI 26 proceedings record,Include—adjacent service-mesh data-path study,USENIX proceedings record with authors and evaluation abstract,Ingress gateway/SmartNIC; not IPC selector
+Towards Performance Robustness for Microservices 2026,USENIX NSDI 26 proceedings record,Include—adjacent runtime robustness work,USENIX proceedings record with authors and abstract,SLO robustness certificates/controllers; not IPC mechanism selection
+General microservice architecture/observability papers returned by query,Various,Exclude from direct IPC comparison,No direct IPC mechanism comparison or selection evidence in accessible record,May be cited only as broader context if claim-specific

@@ -1,0 +1,7 @@
+target_protocol,metric,n,median,p95
+grpc_protobuf,first_request_after_switch_ms,20,0.708126,0.8528639000000001
+grpc_protobuf,steady_median_ms,20,0.3397719999999999,0.3397719999999999
+grpc_protobuf,incremental_switch_overhead_ms,20,0.36835399999999996,0.5130919000000002
+rest_json,first_request_after_switch_ms,20,0.801479,1.2596942000000002
+rest_json,steady_median_ms,20,0.532702,0.532702
+rest_json,incremental_switch_overhead_ms,20,0.268777,0.7269922000000002
